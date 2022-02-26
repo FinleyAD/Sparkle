@@ -1,0 +1,41 @@
+{
+  "ownerIDS": [
+    "947099498126127165"
+  ],
+  "default_cooldown_in_sec": 1.5,
+  "antiCrash": true,
+  "ping_message": true,
+  "delete_commands": true,
+  "somethingwentwrong_cmd": true,
+  "messages": {
+    "ping_message": "To see all commands, type the following: `${prefix}%help`",
+    "cooldown": "Please wait %{timeleft}% more seconds before reusing the `%{commandname}%` command",
+    "notallowed_to_exec_cmd": {
+      "title": "You are not allowed to run this command",
+      "description": {
+        "memberpermission": "You need these Permissions:\n> %{commandmemberpermissions}%",
+        "alloweduserids": "You need to be one of the following users:\n> %{commandalloweduserids}",
+        "requiredroles": "You need to have one of the following roles:\n %{commandrequiredroles}%",
+        "default": "Please make sure to get the needed permissions"
+      }
+    },
+    "somethingwentwrong_cmd": {
+      "title": "Something went wrong while running the :`%{commandname}` command",
+      "description": "```%{errormessage}%```"
+    },
+    "unkown_cmd": "Unkown command",
+    "error_occur": "An error occurred",
+    "error_occur_desc": "````%{errorstack}%````"
+  },
+  "timeout": {
+    "notallowed_to_exec_cmd": {
+      "memberpermissions": 4500,
+      "alloweduserids": 3500,
+      "requiredroles": 3500
+    },
+    "minargs": 3000,
+    "maxargs": 3000,
+    "minplusargs": 3000,
+    "maxplusargs": 3000
+  }
+}
